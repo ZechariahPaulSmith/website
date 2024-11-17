@@ -1,0 +1,249 @@
+*{
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: Arial;
+
+  overflow: hidden;
+
+  scroll-behavior: smooth;
+}
+body{
+  display: inline-block;
+
+  background-color: #071013;
+
+  color: white;
+}
+.nav-bar{
+  position: fixed;
+
+  display: flex;
+  flex-direction: column;
+
+  background: rgb(0,0,0);
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(39,70,144,1) 29%, rgba(87,108,168,1) 100%);
+
+  width: auto;
+  height: 100vh;
+
+  justify-content: center;
+
+  border-color: #071013;
+  border-style: solid;
+  border-width: 0px 10px 0px 0px;
+
+  padding: 0em 2em 0em 2em;
+}
+.social-media{
+  font-size: 5em;
+}
+a {
+  position: relative;
+
+  color: #071013;
+  transition: color 100ms;
+
+  font-size: 5em;
+  font-weight: bolder;
+
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+.nav-bar a{
+  left: 0px;
+  transition: left 250ms;
+}
+.nav-bar a:hover{
+    left: 10px;
+}
+.grid-container{
+  margin-left: 23em;
+
+  display: grid;
+  grid-template-areas:
+    'home'
+    'about'
+    'film'
+    'in-retrospect'
+    'operator'
+    'other-work'
+    'prose'
+    'games'
+    'photo'
+    'music';
+}
+.grid-container > div {
+  height: 100vh;
+  width: auto;
+  font-size: 30px;
+  align-content: center;
+  text-align: center;
+}
+table{
+  width: 100%
+}
+td{
+  white-space: pre-line;
+
+  font-size: 20px;
+  text-align: left;
+  vertical-align: top;
+
+  padding: 10px 30px 20px 30px;
+}
+th{
+  font-size: 20px;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 30px;
+}
+td video, img{
+  width: 20em;
+  height: 10em;
+
+  padding: 0px;
+
+  text-align: center;
+  object-fit: cover;
+  transition: transform 0.2s;
+}
+td video:hover{
+  transform: scale(1.2);
+}
+td img:hover{
+  transform: scale(1.2);
+}
+.home-section {
+  grid-area: home;
+}
+.home-section video{
+  position: relative;
+  left: -50px;
+
+  height: 100vh;
+  width: auto;
+}
+.about-section{
+  grid-area: about;
+  background: rgb(130,21,44);
+  background: linear-gradient(0deg, rgba(130,21,44,1) 0%, rgba(18,28,42,1) 100%);
+}
+.about-section img{
+  border-color: white;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px;
+
+  height: 15em;
+  width: auto;
+}
+.film-section {
+  grid-area: film;
+  background-color: #82152c;
+}
+.film-section p{
+  padding: 0em 4em 0em 4em;
+}
+.film-section a{
+  position: relative;
+  top: 20px;
+}
+.film-section a img{
+  position: relative;
+
+  width: 2em;
+  height: 3em;
+  top: 0px;
+
+  border-color: white;
+  border-width: 10px;
+  border-style: solid;
+  border-radius: 10px;
+
+  object-fit: cover;
+
+  transition: top 0.2s;
+}
+.film-section a img:hover{
+  top: 30px;
+}
+.posters{
+  display: flex;
+  justify-content: center;
+}
+.poster{
+  text-align: center;
+
+  margin: 1em;
+  padding-bottom: 1em;
+}
+.label{
+  position: relative;
+  top: 50px;
+}
+.ir-section{
+  grid-area: in-retrospect;
+}
+h1, h6, p {
+  padding: 10px;
+  font-weight: normal;
+  white-space: pre-line;
+}
+.ir-section p{
+  text-align: left;
+}
+.back-button{
+  color: white;
+
+  position: relative;
+  top: 20px;
+
+  font-size: 1em;
+}
+.back-button:hover{
+  color: black;
+}
+.three-images{
+  display: flex;
+  padding: 1em;
+}
+.three-images img, video{
+  padding: 20px 20px 0px 20px;
+  transition: transform 0.2s;
+  object-fit: contain;
+  width: auto;
+}
+.three-images img:hover{
+  transform: scale(1.2);
+}
+.operator-section{
+  grid-area: operator;
+}
+.operator-section h1, h6, p {
+  padding: 10px;
+  font-weight: normal;
+  white-space: pre-line;
+}
+.operator-section p{
+  text-align: left;
+}
+.other-work-section{
+  grid-area: other-work;
+}
+.prose-section {
+  grid-area: prose;
+}
+.games-section {
+  grid-area: games;
+}
+.photo-section {
+  grid-area: photo;
+}
+.music-section {
+  grid-area: music;
+}
