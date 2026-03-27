@@ -41,8 +41,6 @@ body p{
    max-width: 60vw;
    float: right;
    text-align: center;
-
-
  }
 img{
   max-width: 25vw;
@@ -51,6 +49,7 @@ img{
 footer{
   align-items: center;
   text-align: center;
+  display: flex;
   padding-bottom: 50px;
 }
 .photo-section{
