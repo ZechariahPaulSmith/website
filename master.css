@@ -4,8 +4,13 @@ html{
 }
 *{
   text-decoration: none;
+  font-family: arial;
+}
+h2, h3{
+  text-align: center;
 }
 body{
+  text-align: justify;
   max-width: max-content;
   margin: auto;
   font-size: 25px;
@@ -13,8 +18,32 @@ body{
 }
 body p{
   margin: 25px;
-  font-family: garamond;
 }
+.literature h4{
+  margin: 25px;
+}
+.literature p{
+   margin: 25px;
+   text-align: justify;
+ }
+ .story{
+   display: flex;
+ }
+ .story-context{
+   width: 40vw;
+ }
+ .quote{
+   font-size: 15pt;
+   font-style: italic;
+   text-indent: 50px;
+   padding: 3px;
+   margin: 25px;
+   max-width: 60vw;
+   float: right;
+   text-align: center;
+
+
+ }
 img{
   max-width: 25vw;
   max-height: auto;
@@ -25,7 +54,37 @@ footer{
   padding-bottom: 50px;
 }
 .photo-section{
+  padding-top: 50px;
   max-width: 100vw;
+  display: flex;
+}
+.reel-section{
+  max-width: 100vw;
+  align-items: center;
+  display: flex;
+}
+.reel-section-text{
+  padding-left: 50px;
+  padding-right: 25px;
+}
+.reel-section-video{
+  padding-right: 50px;
+  padding-left: 25px;
+}
+.screenplay{
+  max-width: 100vw;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.screenplay-text{
+  float: left;
+}
+.screenplay-text h4{
+  text-align: center;
+}
+.screenplay-images{
   display: flex;
 }
 .arrow {
