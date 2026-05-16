@@ -34,6 +34,7 @@ body p{
  }
  .story{
    display: flex;
+   align-content: center;
  }
  .story-context{
    width: 40vw;
