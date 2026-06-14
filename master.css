@@ -6,6 +6,11 @@ html{
   text-decoration: none;
   font-family: arial;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+  margin-left: 100px;
+}
 h2, h3{
   text-align: center;
 }

@@ -8,43 +8,40 @@
 </head>
 <style>
 :root {
-    --dark-text: #45667a;
-    --light-text: #5c89a5;
-    --bg: #402f3e;
+    --dark-text: #00b5ce;
+    --light-text: #00b5ce;
+    --bg: white;
 }
 </style>
-<body style="background: #132104;">
+<body>
     <header>
         <div class="container">
             <img src="images/PYCOLOG/website-art/1.png" alt="" id="one">
             <img src="images/PYCOLOG/website-art/2.png" alt="" id="two">
             <img src="images/PYCOLOG/website-art/3.png" alt="" id="three">
             <img src="images/PYCOLOG/website-art/4.png" alt="" id="four">
-            <img src="images/PYCOLOG/website-art/5.png" alt="" id="five">
+            <img src="images/PYCOLOG/website-art/5.png" style="opacity: 0.9" alt="" id="five">
+            <h1> PYCOLOG </h1>
+            <p> a short film </p>
         </div>
     </header>
-    <main style="background: #132104;">
+    <main style="background: #304b19;">
         <section>
-            <h2>PYCOLOG - A SHORT FILM</h2>
-            <p>Based on an article from a company run newspaper headquartered in Lincoln, New Hampshire, the film explores the rapid development of technology and a hope for a better tomorrow.</p>
-            <h3>gallery</h3>
+            <hr>
+            <h2>GALLERY</h2>
             <div class="gallery-row">
                 <img src="images/PYCOLOG/pycolog (1).png" </img>
                 <img src="images/PYCOLOG/pycolog (2).png" </img>
                 <img src="images/PYCOLOG/pycolog (4).png" </img>
             </div>
-            <h3>gallery</h3>
-            <div class="gallery-row">
-                <img src="images/PYCOLOG/pycolog (1).png" </img>
-                <img src="images/PYCOLOG/pycolog (2).png" </img>
-                <img src="images/PYCOLOG/pycolog (4).png" </img>
-            </div>
-            <h3>animatic</h3>
+            <hr>
+            <h2>ANIMATIC</h2>
             <div style="display: flex; justify-content: center; align-content: center; align-items: center;">
               <video controls width="1280" height="720"src="videos/final_attempt_one.mp4" autoplay poster="posterimage.jpg" style="border-radius: 25px;">
                 Your browser does not support HTML5 video :(
               </video>
             </div>
+            <h2>PROJECT IN DEVELOPMENT</h2>
         </section>
     </main>
     <script>
@@ -57,10 +54,11 @@
         document.addEventListener("scroll", () => {
             let value = window.scrollY;
 
-            two.style.bottom = -value * 0.2 + "px";
-            three.style.bottom = -value * 0.4 + "px";
-            four.style.bottom = -value * 0.6 + "px";
-            five.style.bottom = -value * 0.8 + "px";
+            two.style.bottom = -value * 0.4 + "px";
+            three.style.bottom = -value * 0.6 + "px";
+            four.style.bottom = -value * 0.8 + "px";
+            five.style.bottom = -value * 0.9 + "px";
+            five.style.right = -value * 0.05 + "px";
         })
     </script>
 </body>
