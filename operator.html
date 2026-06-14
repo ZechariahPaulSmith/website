@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="movie-page.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="images/operator/website-art/5.png" alt="" id="one">
+            <img src="images/operator/website-art/4.png" alt="" id="two">
+            <img src="images/operator/website-art/3.png" alt="" id="three">
+            <img src="images/operator/website-art/2.png" alt="" id="four">
+            <h1> OPERATOR </h1 id="five">
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Writer / Director</h2>
+            <h1>SHORT FILM</h1>
+            <div class="text-container">
+                <div >
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, consequatur nesciunt facilis sequi cum officiis nisi molestias non autem est.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae rem, praesentium alias, iusto placeat ducimus voluptatum enim cum perferendis voluptatibus a dolore dolorum beatae? Amet, modi? Reiciendis nesciunt quisquam ullam doloremque suscipit asperiores saepe numquam repellat mollitia. Perferendis porro, voluptate quis quia, optio error minus cum voluptatum tempore perspiciatis esse.</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo iusto illum harum voluptatum nobis, cupiditate nulla quod ullam optio fugiat atque vero eligendi sint odio dicta. Repellendus inventore ducimus ullam dignissimos vero doloremque, iusto quia architecto suscipit consectetur quas vel rem expedita officia voluptates, odit ipsam eligendi. Qui eveniet consequuntur inventore architecto odit atque corporis nulla rem quia tempore. Alias officiis delectus facilis autem aperiam nemo, ad nisi animi illum, provident temporibus consequatur velit hic doloribus sed perferendis fugit.</p>
+            </div>
+        </section>
+    </main>
+    <script>
+        const one = document.getElementById("one");
+        const two = document.getElementById("two");
+        const three = document.getElementById("three");
+        const four = document.getElementById("four");
+        const five = document.getElementById("five");
+
+        document.addEventListener("scroll", () => {
+            let value = window.scrollY;
+
+            two.style.bottom = -value * 0.4 + "px";
+            three.style.bottom = -value * 0.6 + "px";
+            four.style.bottom = -value * 0.8 + "px";
+        })
+    </script>
+</body>
+</html>
