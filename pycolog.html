@@ -1,21 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body style="
-  background-color: #000000;
-  opacity: 1;
-  background-image:  linear-gradient(30deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(150deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(30deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(150deg, #141414 12%, transparent 12.5%, transparent 87%, #141414 87.5%, #141414), linear-gradient(60deg, #14141477 25%, transparent 25.5%, transparent 75%, #14141477 75%, #14141477), linear-gradient(60deg, #14141477 25%, transparent 25.5%, transparent 75%, #14141477 75%, #14141477);
-  background-size: 54px 95px;
-  background-position: 0 0, 0 0, 27px 47px, 27px 47px, 0 0, 27px 47px;
-  display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; font-family: arial;">
-    <video controls width="1280" height="720"src="videos/final_attempt_one.mp4" autoplay poster="posterimage.jpg">
-      Your browser does not support HTML5 video :(
-    </video>
-    <h1>PYCOLOG animatic</h1>
-    <h3>Created by Zechariah Smith</h3>
-    <p><a href="index.html" style="text-decoration: none; color: white;">TO HOMEPAGE</a></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PYCOLOG Short Film</title>
+    <link rel="stylesheet" href="movie-page.css">
+</head>
+<style>
+:root {
+    --dark-text: #45667a;
+    --light-text: #5c89a5;
+    --bg: #402f3e;
+}
+</style>
+<body style="background: #132104;">
+    <header>
+        <div class="container">
+            <img src="images/PYCOLOG/website-art/1.png" alt="" id="one">
+            <img src="images/PYCOLOG/website-art/2.png" alt="" id="two">
+            <img src="images/PYCOLOG/website-art/3.png" alt="" id="three">
+            <img src="images/PYCOLOG/website-art/4.png" alt="" id="four">
+            <img src="images/PYCOLOG/website-art/5.png" alt="" id="five">
+        </div>
+    </header>
+    <main style="background: #132104;">
+        <section>
+            <h2>PYCOLOG - A SHORT FILM</h2>
+            <p>Based on an article from a company run newspaper headquartered in Lincoln, New Hampshire, the film explores the rapid development of technology and a hope for a better tomorrow.</p>
+            <h3>gallery</h3>
+            <div class="gallery-row">
+                <img src="images/PYCOLOG/pycolog (1).png" </img>
+                <img src="images/PYCOLOG/pycolog (2).png" </img>
+                <img src="images/PYCOLOG/pycolog (4).png" </img>
+            </div>
+            <h3>animatic</h3>
+            <div style="display: flex; justify-content: center; align-content: center; align-items: center;">
+              <video controls width="1280" height="720"src="videos/final_attempt_one.mp4" autoplay poster="posterimage.jpg" style="border-radius: 25px;">
+                Your browser does not support HTML5 video :(
+              </video>
+            </div>
+        </section>
+    </main>
+    <script>
+        const one = document.getElementById("one");
+        const two = document.getElementById("two");
+        const three = document.getElementById("three");
+        const four = document.getElementById("four");
+        const five = document.getElementById("five");
+
+        document.addEventListener("scroll", () => {
+            let value = window.scrollY;
+
+            two.style.bottom = -value * 0.2 + "px";
+            three.style.bottom = -value * 0.4 + "px";
+            four.style.bottom = -value * 0.6 + "px";
+            five.style.bottom = -value * 0.8 + "px";
+        })
+    </script>
+</body>
 </html>

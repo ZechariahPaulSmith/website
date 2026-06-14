@@ -6,7 +6,7 @@
 
 :root {
     --dark-text: #ab847f;
-    --light-text: #e2b2a2;
+    --light-text: #ecb33c;
     --bg: #402f3e;
 }
 
@@ -20,12 +20,18 @@ header {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    bottom: 0;
 }
 
 header h1{
-    align-content: center;
     text-align: center;
     font-size: 250pt;
+    color: #ecb33c;
+}
+
+header p{
+    text-align: center;
+    font-size: 50pt;
     color: #ecb33c;
 }
 
@@ -64,7 +70,7 @@ main {
 }
 
 main section {
-    width: 80%;
+    width: 95%;
     margin: auto;
 }
 
@@ -74,28 +80,55 @@ main section h2 {
     text-align: center;
 }
 
+main section h3 {
+    color: var(--light-text);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
 main section h1 {
     color: var(--light-text);
     font-size: 8rem;
     text-align: center;
-    line-height: 1;
     margin-top: 40px;
-    background: var(--light-text);
-    background-clip: text;
-    color: transparent;
+    margin-bottom: 40px;
 }
 
-main section .text-container {
-    padding-top: 100px;
-    gap: 20%;
-    display: flex;
-    color: var(--dark-text);
-    font-size: 1.2rem;
-        font-weight: 500;
+main section p {
+  color: var(--dark-text);
+  font-size: 2rem;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
-main section .text-container div {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+main section .gallery-row img{
+  display: inline;
+  width: 30vw;
+  border-radius: 25px;
+  margin: 10px;
+  box-shadow: 0px 5px var(--dark-text);
+}
+
+.container-three{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  padding: 10px;
+}
+.container-two{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px;
+}
+.container-three div {
+  color: var(--dark-text);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.container-two div{
+  color: var(--dark-text);
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
 }
