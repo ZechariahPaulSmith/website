@@ -1,0 +1,128 @@
+html{
+  overflow-x: hidden;
+}
+*{
+  text-decoration: none;
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+hr {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  margin: 0px;
+  padding: 0px;
+}
+h1{
+  color: #118AB2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 25pt;
+  letter-spacing: 5em;
+  text-indent: 2.5em;
+  text-align: center;
+}
+h2{
+  font-size: 25pt;
+  letter-spacing: 2.5em;
+  text-indent: 1.25em;
+  text-align: center;
+}
+header{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+header video{
+  width: 100vw;
+  height: 100vh;
+  object-fit: fill;
+}
+body{
+    background-color: black;
+}
+body p{
+    text-align: justify;
+    font-size: 18pt;
+    padding-bottom: 40px;
+    padding-top: 0px;
+}
+.about-section{
+  background-color: #EF476F;
+  display: block;
+  align-items: center;
+}
+.about-section p{
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.about-section-media{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-content: center;
+}
+.about-section-media div{
+  max-width: 50vw;
+  padding: 100px;
+}
+.about-section-media div video{
+  width: 40vw;
+  height: auto;
+}
+.about-section-media div iframe{
+  width: 40vw;
+  height: 100%;
+}
+.film-section{
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #FFD166;
+  width: 100vw;
+}
+.film-section img{
+  position: relative;
+  width: 33.33vw;
+  top: 0px;
+  transition: top 0.5s;
+}
+.film-section img:hover{
+  top: -10px;
+  transition: top 0.5s;
+}
+.film-section-films{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+}
+.experience-section{
+  background-color: #06D6A0;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+.experience-section hr{
+  margin: 10px;
+}
+.experience-card{
+  display: flex;
+  flex-direction: row;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  padding: 50px;
+  border-radius: 25px;
+  background-color: #118AB2;
+  align-content: center;
+}
+.experience-card img{
+  max-width: 25vw;
+}
+.experience-card p{
+  text-indent: 100px;
+}
+footer{
+  width: 100vw;
+  padding: 40px;
+  text-align: center;
+  color: white;
+  background-color: #073B4C;
+}

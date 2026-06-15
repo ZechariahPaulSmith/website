@@ -156,3 +156,7 @@ main section video{
 .container-two img{
   box-shadow: 0px -5px var(--light-text);
 }
+
+footer{
+  text-align: center;
+}
