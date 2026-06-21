@@ -83,7 +83,7 @@ body p{
 }
 .film-section img{
   position: relative;
-  width: 33.33vw;
+  width: 50vw;
   top: 0px;
   transition: top 0.5s;
 }
@@ -93,7 +93,10 @@ body p{
 }
 .film-section-films{
   display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-columns: 50% 50%;
+}
+.film-section div{
+  align-content: center;
 }
 .experience-section{
   background-color: #06D6A0;
