@@ -63,22 +63,20 @@ body p{
     padding-bottom: 0px;
 }
 .about-section-media{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  align-content: center;
   max-width: 100%;
+  display: inline-grid;
+  grid-template-columns: 50% 50%;
 }
 .about-section-media div{
-  max-width: 50vw;
-  padding: 100px;
+  padding: 5%;
+  max-width: 100%;
+  display: flex;
 }
 .about-section-media div video{
-  width: 40vw;
-  height: auto;
+  max-width: 100%;
 }
 .about-section-media div iframe{
-  width: 40vw;
-  height: 100%;
+  width: 100%;
 }
 .film-section{
   padding-top: 50px;
