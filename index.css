@@ -20,15 +20,17 @@ h1{
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 25pt;
-  letter-spacing: 5em;
-  text-indent: 2.5em;
+  letter-spacing: 5vw;
+  text-indent: 2.5%;
   text-align: center;
+  max-width: 100%;
 }
 h2{
   font-size: 25pt;
   letter-spacing: 2.5em;
   text-indent: 1.25em;
   text-align: center;
+  max-width: 100%;
 }
 header{
   margin: 0;
@@ -36,6 +38,7 @@ header{
   background-color: black;
 }
 header video{
+  max-width: 100%;
   width: 100vw;
   height: 100vh;
   object-fit: fill;
@@ -53,6 +56,7 @@ body p{
   background-color: #EF476F;
   display: block;
   align-items: center;
+  max-width: 100%;
 }
 .about-section p{
     padding: 50px;
@@ -62,6 +66,7 @@ body p{
   display: grid;
   grid-template-columns: 50% 50%;
   align-content: center;
+  max-width: 100%;
 }
 .about-section-media div{
   max-width: 50vw;
@@ -117,7 +122,7 @@ body p{
   align-content: center;
 }
 .experience-card img{
-  max-width: 25vw;
+  max-width: 25%;
 }
 .experience-card p{
   text-indent: 100px;
