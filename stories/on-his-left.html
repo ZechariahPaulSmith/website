@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <h2 class="title">ON HIS LEFT.</h2>
+      <p class="story">----------------------------------------------------------------------<br>
+        Laying on his left side was more comfortable. In this
+        way his stomach relaxed, making him less nauseous: a
+        feeling common to when he rested on his right. This
+        improvement however came at the cost of facing the window
+        where his thin curtains did nothing but tint the sunlight that
+        burst into the room each morning to interrupt his sleep long
+        before he had any intention of waking up. Even now he
+        remains in bed while the sun slowly rises, eyes closed,
+        wishing in vain he was still asleep. Nausea or the sun was an
+        ever present dilemma in his thoughts and every night a new
+        winner was crowned as he decided one kind of suffering was
+        preferable to the other.<br><br>
+        People often recommended remedies: "get thicker
+        curtains," "move your bed," or "wear an eye-mask." All things
+        he could do, but against each, over time, he constructed
+        defenses, some more reasonable than others. He could get
+        new curtains, but that was always too much effort in going to
+        the store, selecting new curtains, then replacing and
+        discarding the old ones. On top of this it was only in the
+        morning that the curtains were an issue. For the rest of the
+        day he quite liked the slight dimming of the sunlight when
+        the curtains were closed. His home could remain private
+        and bright. He could also move his bed, and while this, he
+        decided, was less effort than getting new curtains, it was
+        always something to do 'later.' And when he was honest with
+        himself, he quite liked his room the way it was. Of course he
+        had considered wearing an eye-mask, owning several over
+        his time in this apartment; thinking each time that maybe
+        this time it will help, but each time he slides the mask on
+        and pushes through the discomfort, the sun greets his weary
+        eyes as he finds the mask vanished in the night.<br><br>
+        Not able to defeat the sun, he decides to tackle the
+        nausea. His doctor might know what to do and writing a note
+        to remind him, he found that everytime he found himself in
+        that sterile white room, the unconcerned face of the
+        physician before him, the note would have slipped from his
+        mind or his person, lost on the way in or forgotten crumpled
+        in his pocket, always remembering or finding the note after
+        he'd left and all he could do was sigh at the passing of
+        another wasted chance.<br>----------------------------------------------------------------------<br>
+      </p>
+      <img src="..\images\archives\aerial-photo-halftone.png"></img>
+    </div>
+  </body>
+  <style>
+    *{
+      align-content: center;
+    }
+    body{
+      height: 100%;
+    }
+    div{
+      display: flex;
+      flex-direction: row;
+
+      width: 50vw;
+      height: 75vh;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .title{
+      font-family: sans-serif;
+      overflow: none;
+      text-align: right;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      color: #EB9486;
+    }
+    .story{
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      text-align: justify;
+
+      padding-right: 20px;
+
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      mask-image: linear-gradient(to bottom, transparent 0%, black 25px, black calc(100% - 25px), transparent 100%);
+    }
+    div img{
+      max-width: 25vw;
+      object-fit: cover;
+    }
+  </style>
+</html>

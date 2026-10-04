@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div>
+      <h2 class="title">PLIN.</h2>
+      <p class="story">----------------------------------------------------------------------<br>
+        Plin feels as though her arms get in the way of her
+        sleep. Nightly she lies awake, exhausted, imagining what
+        wonderful dreams she might never experience due to her
+        uncompromising limbs.<br><br>
+        Old haunts draw her attention at this hour; the many
+        times her words failed her emotions and betrayed her--much
+        like her arms now, she thinks. Some of this time she takes to
+        finish past arguments and solve the world's problems: it's all
+        so obvious, why can't everyone else see?<br><br>
+        Maybe she should read, she thinks, the book she's
+        been meaning to read; the book she wants to read: it's right
+        there, waiting on the bed-side table. No. She's too tired, she
+        decides. She knows she'll forget every word.<br><br>
+        She doesn't know why she goes through this every
+        night, but she's never known any other way.<br>----------------------------------------------------------------------<br>
+      </p>
+      <img src="..\images\archives\aerial-photo-halftone.png"></img>
+    </div>
+  </body>
+  <style>
+    *{
+    }
+    body{
+      height: 100%;
+    }
+    div{
+      display: flex;
+      flex-direction: row;
+
+      width: 50vw;
+      height: 75vh;
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .title{
+      font-family: sans-serif;
+      overflow: none;
+      text-align: right;
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
+      color: #EB9486;
+    }
+    .story{
+      overflow-y: scroll;
+      overflow-x: hidden;
+
+      text-align: justify;
+
+      padding-right: 20px;
+
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+
+      mask-image: linear-gradient(to bottom, transparent 0%, black 25px, black calc(100% - 25px), transparent 100%);
+    }
+    div img{
+      max-width: 25vw;
+      object-fit: cover;
+    }
+  </style>
+</html>
